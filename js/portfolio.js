@@ -7,6 +7,7 @@ $(document).ready(function(){
     $('body').toggleClass("body-image");
   });
 });
+
 $(document).ready(function(){
   $(".hamburger").click(function(){
     $(this).toggleClass("is-active");

@@ -11,47 +11,82 @@
   <meta name="theme-color" content="rgb(189, 103, 32)"/> 
   <!-- CSS / JS --> 
   <link rel="stylesheet" type="text/css" href="./css/style_index.css">
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Andika:ital@0;1&family=Lato&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/index.js"></script>   
 </head>
-    <body>
-
-        <!-- Page -->
-        <main>
-          <aside role="Navigation">
-            <div class="menu">
-              <div class="titre">
-                <h1>Qui suis je ?</h1>
-              </div>  
-            </div>
-            
-            <div class="menu-expand">
-              <div class="titre">
-                <h1>CV</h1>
-                <i class="chevron-down"></i>
-              </div>
-              <div class="contenu">
-                <h2>Experience professionelle</h2>
-                <h2>Formations</h2>
-                <h2>Compétences</h2>
-                <h2>Centres d'intérêts</h2>
-              </div>
-            </div>
-            <div class="menu-expand">
-              <div class="titre">
-                <h1>Projets / hobbies</h1>
-                <i class="chevron-down"></i>
-              </div>
-              <div class="contenu">
-                <h2>The Vervada</h2>
-                <h2>Photographies</h2>
-                <h2>Devellopement web</h2>
-              </div>
-            </div>
-          </aside>
-          <div class="page">
-            
+  <body id="top">
+    <nav>
+      <ul class="menu">
+        <li class="menu-item top"><a href="#top">Acceuil</a></li>
+        <li class="menu-item dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Portfolio</a>
+          <div class="dropdown-content">
+            <a href="./photo.html" target="_blank">Photo</a>
+            <a href="./rendus.html" target="_blank">3D</a>
           </div>
-      </main>
+        </li>
+        <li class="menu-item"><a href="#cv">CV</a></li>
+        <li class="menu-item"><a href="#cv">Qui suis-je ?</a></li>
+      </ul>
+     </nav>
+     <!------------------------>
+     <main>
+      <section id="bio">
+        <h2>QUI SUIS-JE ?</h2>
+        <div class="profils">
+          <div>
+            <img class="icone">
+            <h3>Thomas Casanova</h3>
+            <p class="description" id="age">Je m'appelle Thomas Casanova, j'ai (activez le javascript) ans. Je suis en terminale à Vialà Lacoste, lycée général privé en Provence, dans une filière scientifique.</p>
+          </div>
+          <div>
+            <img class="icone" src="./images/icone.png">
+            <h3>Valdr687</h3>
+            <p class="description" id="valdr">Sur internet, on me connait sous ce pseudonyme. On peut me retrouver sur <a>Planet Minecraft</a>, où mes créations ont fait (activez le javascript) téléchargements et (activez le javascript) vues.</p>
+          </div>
+        </div>
+      </section>
+      <section id="cv">
+        <h2>CV</h2>
+        <!--------------->
+        <div class="cv">
+          <div class="info">
+            <p><strong>Salon de Provence</strong></p>
+            <br>
+            <p><strong>Email</strong></p>
+            <p>thomas.casanova@viala-lacoste.com</p>
+            <br>
+            <p>Né le <strong>11/12/2005</strong></p>
+            <br>
+            <br>
+            <p>Github</p>
+            <p><a href="https://github.com/Valdr687" target="_blank">https://github.com/Valdr687</a></p>
+          </div>
+          <div class="contenu">
+            <p class="année">2021</p>
+            <div class="etiquette">
+              <div class="gauche">
+                <p>Obtention du BIA avec Mention très bien</p>
+              </div>
+              <div class="droite">
+                <p>Stage d'une semaine à l'ENTE</p>
+              </div>
+            </div>
+            <p class="année">2020</p>
+            <div class="etiquette">
+              <div class="gauche">
+                <p>Stage d'observation à l'Armée de l'air, et à l'ONERA </p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </section>
+     </main>  
 	</body>
 </html>
