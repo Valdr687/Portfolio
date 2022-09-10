@@ -173,6 +173,7 @@ main img {
 	grid-auto-flow: row;
 	grid-template-areas:
 	  "img texte";
+	margin-top: calc(var(--header-height) + 15px);
 }
 
 .image-actif .image-survol {
