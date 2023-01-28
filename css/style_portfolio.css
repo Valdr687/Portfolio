@@ -13,8 +13,8 @@ html,body {
 	width: 100%;
 	--Body-Nav:20%;
 	--header-height:100px;
-	background-color: #eedbd3;
-
+	background-color: var(--fond-page);
+	color: var(--texte)
 }
 
 /*----------------------------------------------------------Structure page globale*/
@@ -45,7 +45,7 @@ main { grid-area: main;
 	min-height: calc(100vh - 2%);
 	width: 96%;
 	padding: 2% 2% 0 2%;
-	background-color: #eedbd3;
+	background-color: var(--fond-page);
 }
 
 header {
@@ -59,7 +59,7 @@ header {
 	flex-direction: row;
 	text-align: center;
 	z-index: 2;
-	background-color: inherit;
+	background-color: var(--fond-page);
 }
 /*----------------------------------------------------------Texte*/
 .commentaire {
@@ -80,7 +80,7 @@ h2 {
 }
 a:any-link{
     text-decoration: none;
-	color: rgb(118,71,77);
+	color: var(--accentuation-1);
 }
 
 /*----------------------------------------------------------Nav*/
@@ -100,7 +100,7 @@ a:any-link{
 	margin-bottom: 0.5em;
 }
 .item-actif {
-	color: rgb(118,71,77);
+	color: var(--accentuation-1);
 }
 #menu .item:hover, .item-actif:hover {
 	margin-left: 2%;
@@ -141,7 +141,7 @@ main img {
     top: 0;  right: 0;
 	width: 100% ;
 	height: calc( 100% - 4px );
-	background-color: #00000000;
+	background-color: none;
 	transition: background-color 1s  ;
 	grid-area: texte;
 }
@@ -154,7 +154,7 @@ main img {
 	display: none;
 	position: absolute;
     bottom: 0; left: 0;
-    color: #eedbd3;
+    color: var(--texte-clair);
     padding: 1em ;
 	transition: bottom 1s , visibility 0.3s;  ;
 }
@@ -181,7 +181,7 @@ main img {
 }
 
 .image-actif {
-	background-color: #eedbd3;
+	background-color: var(--fond-page);
 	display: grid;
 	grid-template-columns: 80% 20%; 
     grid-template-rows: 100%; 
@@ -195,7 +195,7 @@ main img {
 }
 
 .image-actif .image-survol {
-	background-color: #00000060;
+	background-color: #00000080;
 	grid-area: texte;
 }
 
@@ -210,7 +210,7 @@ main img {
 	top:0;
 	margin: auto 0 auto 5%;
 	max-height: 80%;
-	width: fit-content;
+	width: auto;
 	max-width: 90%;
 	grid-area: img;
 }

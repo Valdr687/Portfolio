@@ -1,93 +1,100 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <!-- Metadonnées -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Valdr687" />
   <title>Thomas C | Site</title>
-  <meta name="description" content="Site réalisé par Thomas Casanova, contient son cv et son portfolio.">
+  <meta name="description"
+    content="Je suis Thomas Casanova, aussi connu sous mon pseudonyme Valdr687 et voici mon site.">
   <link rel="icon" href="./images/icone.png" type="image/icon type">
-  <meta name="theme-color" content="rgb(189, 103, 32)"/> 
-  <!-- CSS / JS --> 
+  <meta name="theme-color" content="rgb(189, 103, 32)" />
+  <!-- CSS / JS -->
+  <link rel="stylesheet" type="text/css" href="./css/colors.css">
   <link rel="stylesheet" type="text/css" href="./css/style_index.css">
-  <!-- Polices --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/quotes.js"></script>
+  <!-- Polices -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Andika:ital@0;1&family=Lato&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="./js/index.js"></script>   
+  <link
+    href="https://fonts.googleapis.com/css2?family=Andika:ital@0;1&family=Lato&family=Open+Sans:ital@0;1&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap" rel="stylesheet">
 </head>
-  <body id="top">
-    <nav>
-      <ul class="menu">
-        <li class="menu-item top"><a href="#top">Acceuil</a></li>
-        <li class="menu-item dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Portfolio</a>
-          <div class="dropdown-content">
-            <a href="./photo.html" target="_blank">Photo</a>
-            <a href="./rendus.html" target="_blank">3D</a>
-          </div>
-        </li>
-        <li class="menu-item"><a href="#cv">CV</a></li>
-        <li class="menu-item"><a href="#cv">Qui suis-je ?</a></li>
-      </ul>
-     </nav>
-     <!------------------------>
-     <main>
-      <section id="bio">
-        <h2>QUI SUIS-JE ?</h2>
-        <div class="profils">
-          <div>
-            <img class="icone">
-            <h3>Thomas Casanova</h3>
-            <p class="description" id="age">Je m'appelle Thomas Casanova, j'ai (activez le javascript) ans. Je suis en terminale à Vialà Lacoste, lycée général privé en Provence, dans une filière scientifique.</p>
-          </div>
-          <div>
-            <img class="icone" src="./images/icone.png">
-            <h3>Valdr687</h3>
-            <p class="description" id="valdr">Sur internet, on me connait sous ce pseudonyme. On peut me retrouver sur <a>Planet Minecraft</a>, où mes créations ont fait (activez le javascript) téléchargements et (activez le javascript) vues.</p>
-          </div>
+
+<body>
+  <nav>
+    <ul class="menu">
+      <li class="menu-item top"><a href="#top">Home</a></li>
+      <li class="menu-item"><a href="#projects">Projects</a></li>
+      <li class="menu-item"><a href="#about">About me</a></li>
+    </ul>
+  </nav>
+  <div class="container holster">
+    <section class="section-1" id="top">
+      <div class="titre">
+        <h1 class="hi">Hi, I'm Valdr687</h1>
+        <h1 id="quotes">a </h1>
+      </div>
+    </section>
+    <section class="section-2" id="about">
+      <div id="photo">
+        <img src="./images/photos/bang.jpg">
+      </div>
+      <div id="bio">
+        <h2>About me :</h2>
+        <p class="citation" translate="no">"Comme si l'insécurité suprême n'était pas de vivre dans un monde où
+          strictement rien de ce que j'écris, dis, fais ne peut plus être intime ou privé"</p>
+        <p class="description" id="valdr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia qui ipsum
+          tempore explicabo doloremque beatae veritatis expedita et quasi facere sapiente, dolores vel velit architecto
+          cupiditate inventore nisi! Sit, tempora?</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium sapiente esse sed
+          sint! At laudantium esse enim. Aliquam tempore ducimus inventore atque optio id qui, iure porro consectetur
+          ipsam eveniet?</p>
+      </div>
+    </section>
+    <section class="section-3" id="projects">
+      <h2 style="text-align: center;">My projects :</h2>
+      <div class="vervada">
+        <h2>The Vervada</h2>
+        <p>The Vervada brings a medieval golden age feeling to your kingdoms and villages. Made for builders, The
+          Vervada combines variants and simple, yet detailed 3d models to add realism, more life and more depth to your
+          creations while keeping the charm of Minecraft's textures. </p>
+      </div>
+      <div class="images">
+        <div class="gauche">
+          <img src="./images/illustration/1.png" id="img1">
         </div>
-      </section>
-      <section id="cv">
-        <h2>CV</h2>
-        <!--------------->
-        <div class="cv">
-          <div class="info">
-            <p><strong>Salon de Provence</strong></p>
-            <br>
-            <p><strong>Email</strong></p>
-            <p>thomas.casanova@viala-lacoste.com</p>
-            <br>
-            <p>Né le <strong>11/12/2005</strong></p>
-            <br>
-            <br>
-            <p>Github</p>
-            <p><a href="https://github.com/Valdr687" target="_blank">https://github.com/Valdr687</a></p>
-          </div>
-          <div class="contenu">
-            <p class="année">2021</p>
-            <div class="etiquette">
-              <div class="gauche">
-                <p>Obtention du BIA avec Mention très bien</p>
-              </div>
-              <div class="droite">
-                <p>Stage d'une semaine à l'ENTE</p>
-              </div>
-            </div>
-            <p class="année">2020</p>
-            <div class="etiquette">
-              <div class="gauche">
-                <p>Stage d'observation à l'Armée de l'air, et à l'ONERA </p>
-              </div>
-            </div>
-          </div>
-
-
-
+        <div class="front">
+          <img src="./images/illustration/2.png" id="img2">
         </div>
-      </section>
-     </main>  
-	</body>
+        <div class="droite">
+          <img src="./images/illustration/3.png" id="img3">
+        </div>
+        <div class="preload">
+          <img src="./images/illustration/4.png">
+          <img src="./images/illustration/5.png">
+          <img src="./images/illustration/6.png">
+          <img src="./images/illustration/7.png">
+        </div>
+        <div class="prev">
+          <a>&#10094;</a>
+        </div>
+        <div class="next">
+          <a class="next">&#10095;</a>
+        </div>
+      </div>
+    </section>
+    <section>4</section>
+    <section>5</section>
+  </div>
+
+
+
+</body>
+
 </html>
