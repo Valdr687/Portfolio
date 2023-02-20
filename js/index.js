@@ -4,9 +4,32 @@ var NbrTelechargementPMC = "4 233";
 var NbrVuesPMC = "22 732";
 var ScorePIX = 768;
 
+// API 
+
+$(document).ready(function() {
+  $.ajax({
+    url: "https://api.modrinth.com/v2/project/LBcosBrl",
+    type: "GET",
+    dataType: "json",
+    success: function(result) {
+      let data = JSON.stringify(result);
+      console.log(data)
+      return data
+    },
+    error: function(error) {
+      console.log(error);
+    }
+  });
+  var downloads = data["downloads"];
+  console.log(downloads)
+  $("#res").append(downloads);
+});
+
+
 // Variables & fonctions pages
 NombreImage=7
 ConfigImage=[]
+AltImage=[]
 for (let i=0;i<NombreImage;i++) {
   ConfigImage.push(i+1)
 }
