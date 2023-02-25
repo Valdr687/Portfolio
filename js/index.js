@@ -1,35 +1,32 @@
-//Variables textuelles
-var MonAge ;
-var NbrTelechargementPMC = "4 233";
-var NbrVuesPMC = "22 732";
-var ScorePIX = 768;
+//Variables 
+var NbrTelechargementPMC = 4_233;
+var DownloadThreshold = {"4000": "four thousands","5000": "five thousands","6000": "six thousands",
+"7000": "seven thousands","8000": "eight thousands","9000": "eight thousands","10000": "ten thousands",
+"15000": "fifteen thousands","20000": "twenty thousands",}
+NombreImage=7
+ConfigImage=[]
+AltImage=[]
 
 // API 
-
+/*
 $(document).ready(function() {
   $.ajax({
     url: "https://api.modrinth.com/v2/project/LBcosBrl",
     type: "GET",
     dataType: "json",
     success: function(result) {
-      let data = JSON.stringify(result);
-      console.log(data)
-      return data
+      var data = result;
+      console.log("Nombre de téléchargements Modrinth" + data.downloads )
+      $("#res").text(textString);
     },
     error: function(error) {
       console.log(error);
     }
   });
-  var downloads = data["downloads"];
-  console.log(downloads)
-  $("#res").append(downloads);
 });
+*/
 
-
-// Variables & fonctions pages
-NombreImage=7
-ConfigImage=[]
-AltImage=[]
+// Carousel 
 for (let i=0;i<NombreImage;i++) {
   ConfigImage.push(i+1)
 }
@@ -39,30 +36,6 @@ function arrayRotate(arr, reverse) {
   else arr.push(arr.shift());
   return arr;
 }
-
-
-//Calcul de l'age
-
-var dob = new Date("12/11/2005");  //Format américain ! : MM/JJ/AAAA
-var month_diff = Date.now() - dob.getTime();  
-var age_dt = new Date(month_diff); 
-var year = age_dt.getUTCFullYear(); 
-
-var MonAge = Math.abs(year - 1970);  
-
-//Insertion des variables
-
-/*$(document).ready(function(){
-    $('#age').text("Je m'appelle Thomas Casanova, j'ai "+ MonAge +" ans. Je suis en terminale à Viala Lacoste, lycée général privé en Provence, dans une filière scientifique.");
-    $('#valdr').html("Sur internet, on me connait sous ce pseudonyme. On peut me retrouver sur <a href='https://www.planetminecraft.com/member/valdr687/' target='_blank'>Planet Minecraft</a>, où mes créations ont fait "+ NbrTelechargementPMC +" téléchargements et "+ NbrVuesPMC +" vues.");
-
-});*/
-
-//Menu
-
-
-
-//Animation 
 
 function agencement(tab) {
   $("#img1").attr("src", "./images/illustration/"+tab[0]+".png");
@@ -83,6 +56,18 @@ $(document).ready(function () {
     agencement(ConfigImage)
   });
 });
+
+
+//Insertion des variables
+
+
+//Menu
+
+
+
+
+
+
 
 
 
