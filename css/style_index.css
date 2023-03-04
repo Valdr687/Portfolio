@@ -15,25 +15,8 @@ body {
     padding: 20%;
 }
 
-.wordCarousel {
-    display: flex;
-    flex-direction: row;
-    gap: 1ch;
-}
-
-.wordCarousel div {
-    overflow: hidden;
-    position: relative;
-    height: 65px;
-    padding-top: 10px;
-    margin-top: -10px;
-
-}
-
-.wordCarousel li {
-    height: 45px;
-    margin-bottom: 45px;
-    display: block;
+#txt-rotate {
+    border-right: 0.08em solid var(--texte);
 }
 
 /*Section 2*/
