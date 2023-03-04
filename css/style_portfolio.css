@@ -1,20 +1,13 @@
 /*Déclarations basiques*/
-* {
-	margin: 0;
-	padding: 0;
-}
-
 .barre-cache {
 	overflow-y: hidden !important;
 	overflow-x: hidden !important;
 }
 
 html,body {
-	width: 100%;
 	--Body-Nav:20%;
 	--header-height:100px;
 	background-color: var(--fond-page);
-	color: var(--texte)
 }
 
 /*----------------------------------------------------------Structure page globale*/
@@ -65,21 +58,10 @@ header {
 .commentaire {
 	font-style:italic;
 }
-p {
-    font-size: calc(14px + 0.300625vw);
-    font-family: 'Open Sans', sans-serif
-}
 h1 {
-	font-size: 1.6rem;    
-    font-family: 'Andika', sans-serif;
 	margin: auto 0;
 }
-h2 {
-  font-size: 1.2rem;
-  font-family: 'Lato', sans-serif;
-}
 a:any-link{
-    text-decoration: none;
 	color: var(--accentuation-1);
 }
 
