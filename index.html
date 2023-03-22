@@ -12,10 +12,12 @@
   <link rel="icon" href="./images/icone.png" type="image/icon type">
   <meta name="theme-color" content="rgb(189, 103, 32)" />
   <!-- CSS / JS -->
-  <link rel="stylesheet" type="text/css" href="./css/colors.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
   <link rel="stylesheet" type="text/css" href="./css/style_index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!--
   <script src="./js/index.js"></script>
+  -->
   <script src="./js/quotes.js"></script>
   <!-- Polices -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +40,11 @@
     <section class="section-1" id="top">
       <div class="titre">
         <h1 class="hi">Hi, I'm Valdr687</h1>
-        <h1 id="quotes">a </h1>
+        <h1>a
+          <span id="txt-rotate"></span>
+          <span class="txt-rotate" data-period="1000"
+            data-rotate='[ "lowpoly artist.", "phototaker.", "frontend enthusiast."]'></span>
+        </h1>
       </div>
     </section>
     <section class="section-2" id="about">
@@ -47,14 +53,18 @@
       </div>
       <div id="bio">
         <h2>About me :</h2>
-        <p class="citation" translate="no">"Comme si l'insécurité suprême n'était pas de vivre dans un monde où
-          strictement rien de ce que j'écris, dis, fais ne peut plus être intime ou privé"</p>
-        <p class="description" id="valdr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia qui ipsum
-          tempore explicabo doloremque beatae veritatis expedita et quasi facere sapiente, dolores vel velit architecto
-          cupiditate inventore nisi! Sit, tempora?</p>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium sapiente esse sed
-          sint! At laudantium esse enim. Aliquam tempore ducimus inventore atque optio id qui, iure porro consectetur
-          ipsam eveniet?</p>
+        <p class="citation" translate="no">Why walk when you can climb ? Why run when you can fly ? Life is meant to
+          be tasted in three dimensions.</p>
+        <p class="description">Around 8 or so years I received my first camera, it was an old-fashioned compact, but I
+          didn't stopped me to point it at everything. Trough the years, I've grown accustomed to always have my camera
+          next to me. I would soon find an interest in relief, in the small details who create big panoramas. That's how
+          I became hooked to digital creation, the only unlimited form of art. The only one who allow one to see his
+          creations turning to life, little pixels turning into something beautiful.</p>
+        <p class="description">It was only natural that I was attracted to Minecraft, that I start playing and creating
+          in this game, through this game. I started with a friend, it's now something I share with thousand of people.
+          What's make Minecraft incredible is the level of personalization possible, I've taken fully advantage of this
+          to make texture packs. Using my faithful pixels, I've created my own experience of Minecraft, for myself and
+          my friends or so I believed. Now my creations have been downloads <p id="downloads"></p> </p>
       </div>
     </section>
     <section class="section-3" id="projects">

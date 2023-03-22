@@ -1,50 +1,3 @@
-/*Déclarations générales*/
-* {
-    margin: 0;
-    padding: 0;
-    max-width: 100vw;
-}
-
-body,
-html {
-    max-width: 100vw;
-    width: 100%;
-}
-
-p {
-    font-size: calc(14px + 0.300625vw);
-    font-family: 'Open Sans', sans-serif
-}
-
-h1 {
-    font-size: 1.6rem;
-    font-family: 'Andika', sans-serif;
-}
-
-.hi {
-    font-size: 2rem;
-}
-
-h2 {
-    font-size: 1.4rem;
-    font-family: 'Andika', sans-serif;
-}
-
-h3 {
-    font-size: 1.2rem;
-    font-family: 'Andika', sans-serif;
-}
-
-a:any-link {
-    text-decoration: none;
-}
-
-.citation {
-    font-style: italic;
-    color: var(--citation);
-    font-size: 80%;
-}
-
 /*Variable*/
 html {
     --hauteur-nav: 64px;
@@ -62,25 +15,8 @@ body {
     padding: 20%;
 }
 
-.wordCarousel {
-    display: flex;
-    flex-direction: row;
-    gap: 1ch;
-}
-
-.wordCarousel div {
-    overflow: hidden;
-    position: relative;
-    height: 65px;
-    padding-top: 10px;
-    margin-top: -10px;
-
-}
-
-.wordCarousel li {
-    height: 45px;
-    margin-bottom: 45px;
-    display: block;
+#txt-rotate {
+    border-right: 0.08em solid var(--texte);
 }
 
 /*Section 2*/
