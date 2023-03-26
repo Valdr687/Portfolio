@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "ajax",
+        "BYSA",
         "casanova",
         "Claussis",
         "Correo",
@@ -39,5 +40,6 @@
         "viala",
         "Viala"
     ],
-    "cSpell.language": "fr-90,fr,fr-FR,lorem,en-US"
+    "cSpell.language": "fr-90,fr,fr-FR,lorem,en-US",
+    "liveServer.settings.port": 5501
 }

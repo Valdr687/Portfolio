@@ -10,6 +10,9 @@ html,body {
 	background-color: var(--fond-page);
 }
 
+.titre {
+	padding: 0 4%;
+}
 /*----------------------------------------------------------Structure page globale*/
 body {  display: grid;
 	grid-template-columns: var(--Body-Nav) calc(100% - var(--Body-Nav)); 
@@ -325,7 +328,7 @@ main img {
  */
  .hamburger {
 	z-index: 2;
-	background-color: #ecd5ca80;
+	background-color: var(--fond-page);
 	border-radius: 5px;
 	padding: 0.5em;
 	display: none;
