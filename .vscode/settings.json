@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "ajax",
+        "BYSA",
         "casanova",
         "Claussis",
         "Correo",
@@ -14,6 +15,7 @@
         "Giens",
         "Girardin",
         "Icone",
+        "jonsuh",
         "l'oeil",
         "lacoste",
         "Lacoste",
@@ -30,6 +32,7 @@
         "quién",
         "reddit",
         "Rioufenc",
+        "Telechargement",
         "thomas",
         "Trabuquete",
         "Valdr",
@@ -38,5 +41,6 @@
         "viala",
         "Viala"
     ],
-    "cSpell.language": "fr-90,fr,fr-FR,lorem,en-US"
+    "cSpell.language": "fr-90,fr,fr-FR,lorem,en-US",
+    "liveServer.settings.port": 5501
 }
