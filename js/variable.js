@@ -1,5 +1,5 @@
 //Variables & fonctions
-const NbrTelechargementPMC = 4_818;
+const NbrTelechargementPMC = 5_035;
 Download = []
 DownloadThreshold = {"4000": "four thousands","5000": "five thousands","6000": "six thousands",
 "7000": "seven thousands","8000": "eight thousands","9000": "eight thousands","10000": "ten thousands",
@@ -43,6 +43,8 @@ function getData(id) {
 $(document).ready(function () {
   //Vervada
   getData('4Dg1DEy1');
+  getData('maQkz5tH');
+  getData('CG0q8SZ2');
   
   var totalDownloads = NbrTelechargementPMC;
   for (let i in Download) {

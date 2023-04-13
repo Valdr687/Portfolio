@@ -1,5 +1,5 @@
 //Variables & fonctions
-NombreImage=7
+NombreImage=9
 ConfigImage=[]
 AltImage=[]
 quotes = [ "lowpoly artist.", "phototaker.", "frontend enthusiast."];
