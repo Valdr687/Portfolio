@@ -71,7 +71,7 @@ a:any-link{
 /*----------------------------------------------------------Nav*/
 
 
-.items { grid-area: items; 
+.items {  
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;

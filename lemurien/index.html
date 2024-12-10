@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Conditions d'utilisations - Dons pour les lémuriens verts d'Israel</title>
+  <script src="./js/script1.js" charset="utf-8"></script>
+  <link rel='stylesheet' href='./css/style2.css'>
+  <link rel="icon" href="./images/favicon.png">
+</head>
+
+<body>
+
+  <main>
+    <div class="center">
+      <h1> - Conditions d'utilisations - Dons pour les lémuriens verts d'Israel -</h1>
+      <h2> Nom d'utilisateur </h2>
+      Saisir votre nom d'utilisateur et cliquer sur Valider
+      <br>
+      <input type="text" id="nomUse" name="nom" size="20"
+        title="Entrer votre nom d'utilisateur (au moins 2 caractères alphabétiques)" pattern="[A-Za-z]{2,}"
+        placeholder="Nom d'utilisateur" />
+      <input type="email" id="email" name="email" placeholder="Email" /></p>
+      <input type="button" value="Valider" onclick="verifNom()">
+      <br>
+      <h2>Cookies</h2>
+      <br>
+      <input type="checkbox" id="check1" />Laisser le site récupérer votre historique de navigation (nécessaire pour
+      vous
+      proposer des produits de qualité.)
+      <br>
+      <input type="checkbox" id="check2" />Autoriser le site à récupérer vos mots de passe
+      <br>
+      <input type="checkbox" id="check3" />Autoriser le site à prendre le contrôle de votre appareil et de revendre ses
+      données pour vous assurer la meilleur expérience en terme de donation à une cause animale.
+      <br>
+
+      <h2>Acceptez vous les conditions d'utilisation ?</h2>
+      <select id="choix" onblur="accepterCondition();">
+        <option value=-1>=============</option>
+        <option value=1>Tout accepter</option>
+        <option value=2>Enregistrer</option>
+        <option value=3>Tout refuser</option>
+      </select>
+      <br>
+      <button onclick="window.location.href='youtube.com/watch?v=dQw4w9WgXcQ'">Valider</button>
+    </div>
+    <div class="center">
+      <h2>Pensez à nous ! ❤️</h2>
+      <img src="./images/fond.jpg" alt="Fond">
+
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+html {
+    background-image: linear-gradient(to top, #0C2574, #214074, #2F5674, #3D6074);
+}
+
+body {
+    margin: auto;
+    font-family: "Merryweather", serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #251e42;
+    min-height: 100vh;
+}
+
+p {
+    font-family: "Merryweather", serif;
+    font-size: 13px;
+    color: #BDBFFF;
+}
+
+ul {
+    font-family: "Merryweather", serif;
+    font-size: 13px;
+    color: #101249;
+}
+
+h1 {
+    font-family: "Merryweather", serif;
+    font-size: 25px;
+    color: #808DE2;
+    background: linear-gradient(to right, #660749, #4b2661);
+    background-clip: text;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Merryweather", serif;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: bold;
+    color: #808DE2;
+    background: linear-gradient(to right, #660749, #4b2661);
+}
+
+h3 {
+    font-family: "Merryweather", serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #808DE2;
+}
+
+/*�tat si show : rendre visible*/
+#info.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 1.5s;
+    animation: fadein 0.5s, fadeout 0.5s 1.5s;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
