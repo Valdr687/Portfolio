@@ -77,3 +77,8 @@ a:any-link {
     color: var(--citation);
     font-size: 80%;
 }
+
+.container {
+    margin: 20vh auto; 
+    text-align: center;
+}
